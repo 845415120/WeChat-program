@@ -1,0 +1,46 @@
+{
+    "pages": [
+
+     
+      "pages/index/index",
+        "pages/post/post",
+        "pages/post/post-detail/post-detail",
+        "pages/post/post-comment/post-comment",
+        "pages/movie/movie",
+        "pages/movie1/movie1",
+        "pages/setting/setting"          
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#4a6141"
+        
+    },
+    "tabBar": {
+      "borderStyle": "white",
+      "selectedColor": "#4A6141",
+      "color": "#333",
+      "backgroundColor": "#fff",
+      "position": "bottom",
+      "list": [{
+        "pagePath": "pages/post/post",
+        "text": "文章",
+        "iconPath": "images/icon/wx_app_add.png",
+        "selectedIconPath": "images/icon/wx_app_add.png"
+      },
+    {
+      "pagePath": "pages/movie/movie",
+      "text": "光影",
+      "iconPath": "images/icon/wx_app_add.png",
+      "selectedIconPath": "images/icon/wx_app_add.png"
+    },
+    {
+      "pagePath":  "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "images/icon/wx_app_add.png",
+      "selectedIconPath": "images/icon/wx_app_add.png"
+    }
+  ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

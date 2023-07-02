@@ -1,0 +1,15 @@
+<!--pages/movie1/movie1.wxml-->
+<view class="movie-list">
+  <block wx:for="{{ajaxData.data}}" wx:key="url">
+    <view class="movie-item">
+      <image src="{{item.imageUrl}}"></image>
+      <view class="movie-info">
+        <view class="movie-name">{{item.name}}</view>
+        <view class="movie-category">{{movie.cat}}</view>
+        <view class="movie-duration">{{movie.dur}}分钟</view>
+        <view class="movie-director">{{movie.dir}}</view>
+        <view class="movie-actors">{{movie.act}}</view>
+      </view>
+    </view>
+  </block>
+</view>

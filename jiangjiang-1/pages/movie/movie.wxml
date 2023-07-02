@@ -1,0 +1,33 @@
+<import src="../movie/movie-list/movie-list-tpl"/>
+
+<view class="container">
+  <view class="movies-template">
+    <image src="{{ajaxData}}" mode=""/>
+    <view catchtap="getMovieList">
+      1111
+    </view>
+    <template is="movieListTpl" data="{{...inTheaters}}"/>
+  </view>
+  <view class="movie-list">
+  <block wx:for="{{ajaxData.classicMovies.list}}" wx:key="url">
+    <view class="movie-item">
+      <image src="{{item.img}}"></image>
+      <view class="movie-info">
+        <view class="movie-name">{{item.nm}}</view>
+        <view class="movie-category">{{item.cat}}</view>
+        <view class="movie-duration">{{item.dur}}分钟</view>
+        <view class="movie-director">{{item.dir}}</view>
+        <view class="movie-actors">{{item.act}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+  <view class="movies-template">
+    <template is="movieListTpl" data="{{...comingSoon}}"/>
+  </view>
+
+  <view class="movies-template">
+    <template is="movieListTpl" data="{{...top250}}"/>
+  </view>
+</view>
